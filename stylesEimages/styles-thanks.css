@@ -89,6 +89,16 @@ a{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
 }
 
+@keyframes slowTop{
+    from {transform: translateY(20%);}
+    to {transform: translateX(0%);}
+}
+
+@keyframes surgir{
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
 body> section{
     width: 90vw;
     min-height: 30vh;
@@ -97,6 +107,8 @@ body> section{
     background-color: white;
     border-radius: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.233);
+    animation-name: slowTop, surgir;
+    animation-duration: 1s;
 }
 
 section .titleThanks h1{
